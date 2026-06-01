@@ -10,7 +10,7 @@
     "messages": [
         {
             "id": "0922b918-a1f6-4754-b3d6-ef34424d7d38",
-            "sender": "Alberto",
+            "sender": "Dani",
             "text": "Esos datos no cuentan toda la historia. El hecho de que trabajen no significa que no haya una presión brutal sobre los salarios más bajos o que los servicios públicos no se saturen igual.",
             "timestamp": 1779874864.96777,
             "reply_to": null,
@@ -20,70 +20,70 @@
         },
         {
             "id": "cfe11d0f-28fd-4aa7-90ed-8c959debaf50",
-            "sender": "Irene",
+            "sender": "Júlia",
             "text": "Los datos son claros y demuestran q la integracion laboral funciona, asi que dejarlo todo en especulaciones sobre salarios es ignorar la realidad del informe. Es obvio que el impacto es positivo y no hay pruebas reales de ese colapso q algunos insisten en pintar.",
             "timestamp": 1779874906.53929,
-            "reply_to": "Alberto",
+            "reply_to": "Dani",
             "reply_text": "Esos datos no cuentan toda la historia. El hecho de que trabajen no significa que no haya una presión brutal sobre los salarios más bajos o que los servicios públicos no se saturen igual.",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "fafb24c9-f15c-4024-83af-d1e4679117e4",
-            "sender": "Oscar",
+            "sender": "Juan",
             "text": "Que ingenuidad... creerse esos numeritos es de alguien chiflado. Ignoras que colapsan todo mientras nos venden fantasias. Vaya farsa de integracion!",
             "timestamp": 1779874943.203193,
-            "reply_to": "Irene",
+            "reply_to": "Júlia",
             "reply_text": "Los datos son claros y demuestran q la integracion laboral funciona, asi que dejarlo todo en especulaciones sobre salarios es ignorar la realidad del informe. Es obvio que el impacto es positivo y no hay pruebas reales de ese colapso q algunos insisten en pintar.",
             "is_mention": false,
             "likes": 1
         },
         {
             "id": "d13d0c81-fb3f-4e68-be44-5c17f558e307",
-            "sender": "Sergio",
+            "sender": "Noa",
             "text": "Me parece una farsa que celebren esos datos como un exito. q el 72% trabaje no significa nada si la mayoria estan en trabajos precarios y mal pagados. Es una mierda de informe que solo sirve para maquillar la explotacion laboral y como se usan a los inmigrantes para hundir los salarios de todos. Dejad de vender fantasias con numeritos y mirad la realidad: el sistema es una basura q se aprovecha de la necesidad.",
             "timestamp": 1779874984.778717,
-            "reply_to": "Oscar",
+            "reply_to": "Juan",
             "reply_text": "Que ingenuidad... creerse esos numeritos es de alguien chiflado. Ignoras que colapsan todo mientras nos venden fantasias. Vaya farsa de integracion!",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "9c33f172-cfcd-4e71-8536-5e97b55dd97d",
-            "sender": "Cristina",
+            "sender": "Núria",
             "text": "Esos datos ocultan la precariedad laboral y la presión a la baja que sufren los salarios.",
             "timestamp": 1779875020.436055,
-            "reply_to": "Irene",
+            "reply_to": "Júlia",
             "reply_text": "Los datos son claros y demuestran q la integracion laboral funciona, asi que dejarlo todo en especulaciones sobre salarios es ignorar la realidad del informe. Es obvio que el impacto es positivo y no hay pruebas reales de ese colapso q algunos insisten en pintar.",
             "is_mention": true,
             "likes": 1
         },
         {
             "id": "9762ab69-a5b4-41b7-a4ae-659e3846e00f",
-            "sender": "Irene",
+            "sender": "Júlia",
             "text": "El informe es concreto: el 72% trabaja y solo el 1,7% recibe ayudas sociales. Esos datos contradicen la idea del colapso y muestran una realidad laboral muy distinta a la q planteas.",
             "timestamp": 1779875063.35141,
-            "reply_to": "Oscar",
+            "reply_to": "Juan",
             "reply_text": "Que ingenuidad... creerse esos numeritos es de alguien chiflado. Ignoras que colapsan todo mientras nos venden fantasias. Vaya farsa de integracion!",
             "is_mention": true,
             "likes": 0
         },
         {
             "id": "bf480b8a-bb58-47d4-98c5-ccef430673a0",
-            "sender": "Rafa",
+            "sender": "Alba",
             "text": "Menuda farsa de informe... Me parece una vergüenza que se usen esos porcentajes para engañar a la gente. q el 72% trabaje no es un exito, es que los tienen explotados en trabajos basura para que los salarios sigan x los suelos. Es una mentira descarada intentar pintar esto como algo positivo cuando solo ocultan la precariedad real. Dejad de soltar numeritos vacios y admitid la realidad del sistema!",
             "timestamp": 1779875121.725497,
-            "reply_to": "Irene",
+            "reply_to": "Júlia",
             "reply_text": "El informe es concreto: el 72% trabaja y solo el 1,7% recibe ayudas sociales. Esos datos contradicen la idea del colapso y muestran una realidad laboral muy distinta a la q planteas.",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "dc239fcb-ec51-471f-af30-01fbd78ff46b",
-            "sender": "Nuria",
+            "sender": "Elena",
             "text": "Totalmente, aunque hay gente con la cabeza cuadrada que prefiere seguir creyendo bulos racistas q mirar los datos.",
             "timestamp": 1779875174.156169,
-            "reply_to": "Irene",
+            "reply_to": "Júlia",
             "reply_text": "El informe es concreto: el 72% trabaja y solo el 1,7% recibe ayudas sociales. Esos datos contradicen la idea del colapso y muestran una realidad laboral muy distinta a la q planteas.",
             "is_mention": true,
             "likes": 0

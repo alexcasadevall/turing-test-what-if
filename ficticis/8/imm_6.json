@@ -10,7 +10,7 @@
     "messages": [
         {
             "id": "972a2351-54bf-4d7e-8522-1f3bbcc5c6d4",
-            "sender": "Sergio",
+            "sender": "Anna",
             "text": "Vaya farsa de articulo... Me harta que siempre vendan la inmigracion como si fuera una puta catastrofe demografica pa asustar a la gente. Es ridiculo hablar de \"presion\" cuando el problema es q los gestores de turno son unos ineptos q no saben organizar un calendario,mucho menos una estrategia migratoria seria. No es una crisis de personas,es una crisis de gestion mediocre. Dejad de presentar estos parches administrativos como si fueran soluciones reales,que ya cansa tanta tonteria.",
             "timestamp": 1780045728.566995,
             "reply_to": null,
@@ -20,70 +20,70 @@
         },
         {
             "id": "7eba8950-0593-4676-bedb-112ad6a50192",
-            "sender": "Paula",
+            "sender": "Pol",
             "text": "Totalmente,faltan recursos y plan real.",
             "timestamp": 1780045768.505398,
-            "reply_to": "Sergio",
+            "reply_to": "Anna",
             "reply_text": "Vaya farsa de articulo... Me harta que siempre vendan la inmigracion como si fuera una puta catastrofe demografica pa asustar a la gente. Es ridiculo hablar de \"presion\" cuando el problema es q los gestores de turno son unos ineptos q no saben organizar un calendario,mucho menos una estrategia migratoria seria. No es una crisis de personas,es una crisis de gestion mediocre. Dejad de presentar estos parches administrativos como si fueran soluciones reales,que ya cansa tanta tonteria.",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "769808bc-db27-4675-9e35-a7586afed926",
-            "sender": "Irene",
+            "sender": "Isona",
             "text": "Es que es patético pensar que con cuatro papeles se soluciona el caos. Sin un control real esto es una invitación al fraude y a seguir improvisando con la vida de la gente.",
             "timestamp": 1780045804.650609,
-            "reply_to": "Paula",
+            "reply_to": "Pol",
             "reply_text": "Totalmente,faltan recursos y plan real.",
             "is_mention": false,
             "likes": 1
         },
         {
             "id": "c8d00af2-74e7-4347-adb2-87843ae24d78",
-            "sender": "Carlos",
+            "sender": "Helena",
             "text": "Exacto, sin una estrategia real solo saturamos más la vivienda y los servicios.",
             "timestamp": 1780045842.528439,
-            "reply_to": "Irene",
+            "reply_to": "Isona",
             "reply_text": "Es que es patético pensar que con cuatro papeles se soluciona el caos. Sin un control real esto es una invitación al fraude y a seguir improvisando con la vida de la gente.",
             "is_mention": false,
             "likes": 1
         },
         {
             "id": "3407023e-96b8-4f81-a620-71b807584e6d",
-            "sender": "Diego",
+            "sender": "Marc",
             "text": "Precisamente para evitar el fraude y el caos hace falta regularizar. Sacar a la gente de la sombra es la única forma de tener un control real y gestionar los recursos.",
             "timestamp": 1780045888.522521,
-            "reply_to": "Irene",
+            "reply_to": "Isona",
             "reply_text": "Es que es patético pensar que con cuatro papeles se soluciona el caos. Sin un control real esto es una invitación al fraude y a seguir improvisando con la vida de la gente.",
             "is_mention": true,
             "likes": 0
         },
         {
             "id": "f52ebc68-9232-41ea-97bf-a3fc0f1f4e11",
-            "sender": "Nuria",
+            "sender": "Sílvia",
             "text": "Menuda sarta de tonterias... Solo un ignorante diria que regularizar es un parche.",
             "timestamp": 1780045940.517327,
-            "reply_to": "Sergio",
+            "reply_to": "Anna",
             "reply_text": "Vaya farsa de articulo... Me harta que siempre vendan la inmigracion como si fuera una puta catastrofe demografica pa asustar a la gente. Es ridiculo hablar de \"presion\" cuando el problema es q los gestores de turno son unos ineptos q no saben organizar un calendario,mucho menos una estrategia migratoria seria. No es una crisis de personas,es una crisis de gestion mediocre. Dejad de presentar estos parches administrativos como si fueran soluciones reales,que ya cansa tanta tonteria.",
             "is_mention": true,
             "likes": 1
         },
         {
             "id": "8872ea90-a3a9-4f0c-85d4-6d8cb78f173a",
-            "sender": "Sergio",
+            "sender": "Anna",
             "text": "Que ingenuidad pensar que poner un sello en un papel soluciona el caos estructural. Regularizar no es \"control\",es simplemente lavar la conciencia del sistema mientras se sigue improvisando. Es una puta mentira decir que es la unica forma de gestionar recursos cuando lo q falta es inversion real y voluntad politica,no mas tramites burocraticos. Seguir vendiendo estos parches como la panacea es ridiculo y solo sirve para mantener el status quo mediocre de siempre.",
             "timestamp": 1780046012.187216,
-            "reply_to": "Diego",
+            "reply_to": "Marc",
             "reply_text": "Precisamente para evitar el fraude y el caos hace falta regularizar. Sacar a la gente de la sombra es la única forma de tener un control real y gestionar los recursos.",
             "is_mention": true,
             "likes": 0
         },
         {
             "id": "0b797eb2-0660-4bc6-a2e5-8d48a0b8d337",
-            "sender": "Paula",
+            "sender": "Pol",
             "text": "Sin recursos reales, el control es inexistente.",
             "timestamp": 1780046064.922577,
-            "reply_to": "Diego",
+            "reply_to": "Marc",
             "reply_text": "Precisamente para evitar el fraude y el caos hace falta regularizar. Sacar a la gente de la sombra es la única forma de tener un control real y gestionar los recursos.",
             "is_mention": true,
             "likes": 1

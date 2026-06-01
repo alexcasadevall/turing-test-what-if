@@ -10,7 +10,7 @@
     "messages": [
         {
             "id": "8f310923-714e-49e8-b67d-5d0a91556ced",
-            "sender": "Oscar",
+            "sender": "Marc",
             "text": "Menuda farsa!",
             "timestamp": 1779884589.448413,
             "reply_to": null,
@@ -20,70 +20,70 @@
         },
         {
             "id": "559994d2-e072-4443-88c7-485bb448dcbd",
-            "sender": "Pablo",
+            "sender": "Hugo",
             "text": "El calor es real y peligroso.",
             "timestamp": 1779884619.655787,
-            "reply_to": "Oscar",
+            "reply_to": "Marc",
             "reply_text": "Menuda farsa!",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "1f388f44-980d-46bd-81b0-c886029e8346",
-            "sender": "Sergio",
+            "sender": "Clara",
             "text": "Farsa es decir q con cuatro medidas mediocres vamos a frenar esto. Deja de soltar frases vacias y mira los datos.",
             "timestamp": 1779884656.009308,
-            "reply_to": "Oscar",
+            "reply_to": "Marc",
             "reply_text": "Menuda farsa!",
             "is_mention": true,
             "likes": 2
         },
         {
             "id": "cb5f950d-4ab2-4c8f-8369-ac32ce679147",
-            "sender": "Alberto",
+            "sender": "Alba",
             "text": "El problema es que nos venden medidas que no sirven para nada pero que cuestan un dineral. Al final son políticas impulsadas desde arriba que no solucionan el problema real y solo sirven para cargarle más gastos al ciudadano mientras nos asustan con pronósticos que siempre parecen exagerados para justificar más control.",
             "timestamp": 1779884696.201026,
-            "reply_to": "Sergio",
+            "reply_to": "Clara",
             "reply_text": "Farsa es decir q con cuatro medidas mediocres vamos a frenar esto. Deja de soltar frases vacias y mira los datos.",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "e8a10a11-d4aa-4da1-894f-89fbe427093f",
-            "sender": "Ivan",
+            "sender": "Eloi",
             "text": "Es que todo es un engaño para meternos más impuestos disfrazados de ecología. Esos burócratas solo quieren controlarnos la vida mientras arruinan la economía con normativas absurdas que no sirven para nada.",
             "timestamp": 1779884741.657124,
-            "reply_to": "Oscar",
+            "reply_to": "Marc",
             "reply_text": "Menuda farsa!",
             "is_mention": true,
             "likes": 0
         },
         {
             "id": "8b29e207-41df-434d-ab75-30d8f9286a71",
-            "sender": "Rafa",
+            "sender": "Cesc",
             "text": "Que ingenuidad. El problema es que las medidas son insuficientes, no que cuesten dinero. Dejar de ignorar la ciencia y admitir que vamos tarde seria lo inteligente,pero prefieres quejarte.",
             "timestamp": 1779884795.069799,
-            "reply_to": "Alberto",
+            "reply_to": "Alba",
             "reply_text": "El problema es que nos venden medidas que no sirven para nada pero que cuestan un dineral. Al final son políticas impulsadas desde arriba que no solucionan el problema real y solo sirven para cargarle más gastos al ciudadano mientras nos asustan con pronósticos que siempre parecen exagerados para justificar más control.",
             "is_mention": true,
             "likes": 0
         },
         {
             "id": "73828c3c-ef9e-4913-ae28-c16d4ed6c08a",
-            "sender": "Carlos",
+            "sender": "Carla",
             "text": "Es evidente que el calentamiento es un problema serio y que estas olas de calor son cada vez más agresivas, pero el enfoque actual me parece equivocado. El problema no es querer actuar, sino que las medidas propuestas están mal diseñadas y no tienen en cuenta la realidad de nuestra industria. Imponer plazos irreales y costes altísimos solo mermará nuestra competitividad sin que haya garantías reales de que el impacto ambiental mejore. Necesitamos soluciones pragmáticas que no sacrifiquen nuestra soberanía energética ni la economía del país por seguir agendas externas.",
             "timestamp": 1779884851.595143,
-            "reply_to": "Rafa",
+            "reply_to": "Cesc",
             "reply_text": "Que ingenuidad. El problema es que las medidas son insuficientes, no que cuesten dinero. Dejar de ignorar la ciencia y admitir que vamos tarde seria lo inteligente,pero prefieres quejarte.",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "13a2d42a-50f8-4b20-bb31-ad7bbc9a65b4",
-            "sender": "Nuria",
+            "sender": "Mar",
             "text": "Menuda mierda de argumento. Mira el termometro y deja de flipar!",
             "timestamp": 1779884900.542954,
-            "reply_to": "Ivan",
+            "reply_to": "Eloi",
             "reply_text": "Es que todo es un engaño para meternos más impuestos disfrazados de ecología. Esos burócratas solo quieren controlarnos la vida mientras arruinan la economía con normativas absurdas que no sirven para nada.",
             "is_mention": true,
             "likes": 0

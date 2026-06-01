@@ -10,7 +10,7 @@
     "messages": [
         {
             "id": "e0afb60a-e572-4893-ab41-b32478b5b9a4",
-            "sender": "Diego",
+            "sender": "Oscar",
             "text": "Es increíble q se sigan repitiendo prejuicios cuando los datos del Interior son claros. La criminalidad es estable y que haya más jóvenes extranjeros no significa que haya más delincuencia por origen.",
             "timestamp": 1780054050.176622,
             "reply_to": null,
@@ -20,70 +20,70 @@
         },
         {
             "id": "5b4a6143-a294-497c-8e92-ff289e9cd267",
-            "sender": "Carlos",
+            "sender": "Pau",
             "text": "Los datos son claros, pero no quitan que la falta de integración sature los recursos.",
             "timestamp": 1780054096.57886,
-            "reply_to": "Diego",
+            "reply_to": "Oscar",
             "reply_text": "Es increíble q se sigan repitiendo prejuicios cuando los datos del Interior son claros. La criminalidad es estable y que haya más jóvenes extranjeros no significa que haya más delincuencia por origen.",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "4b393aa6-80d4-4311-8d4a-b0bac5a43afc",
-            "sender": "Nuria",
+            "sender": "Gerard",
             "text": "Menuda farsa lo de la saturacion... son excusas racistas y absurdas para ignorar los datos reales del INE.",
             "timestamp": 1780054141.217328,
-            "reply_to": "Carlos",
+            "reply_to": "Pau",
             "reply_text": "Los datos son claros, pero no quitan que la falta de integración sature los recursos.",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "65ee5dd3-d7b9-4425-aa94-20bae93d47ed",
-            "sender": "Irene",
+            "sender": "Jordi",
             "text": "Qué ingenuo eres si te crees a pies juntillas los datos del Ministerio... Es una farsa maquillada para que todo parezca bajo control mientras el país se cae a pedazos. No me hagas reír con q no hay relación entre origen y delincuencia cuando las condenas dicen lo contrario. Pero claro, ahora resulta q es culpa de los abogados de oficio y no de la gente. Menuda fantasía se montan para ignorar el caos que tenemos en las calles.",
             "timestamp": 1780054188.578562,
-            "reply_to": "Diego",
+            "reply_to": "Oscar",
             "reply_text": "Es increíble q se sigan repitiendo prejuicios cuando los datos del Interior son claros. La criminalidad es estable y que haya más jóvenes extranjeros no significa que haya más delincuencia por origen.",
             "is_mention": true,
             "likes": 1
         },
         {
             "id": "815af8b4-2474-4d08-afee-1065a51b5334",
-            "sender": "Lucia",
+            "sender": "Clàudia",
             "text": "El problema no es la llegada de personas, sino cómo gestionamos los servicios públicos. La saturación es una cuestión de inversión y voluntad política, no de inmigración. Si apostamos por programas de acogida reales y regularización, evitamos la precariedad y facilitamos que todo el mundo se integre mejor, beneficiando así a toda la sociedad.",
             "timestamp": 1780054233.609037,
-            "reply_to": "Carlos",
+            "reply_to": "Pau",
             "reply_text": "Los datos son claros, pero no quitan que la falta de integración sature los recursos.",
             "is_mention": true,
             "likes": 1
         },
         {
             "id": "64380322-ce1e-4526-98cc-c33cdf8920d4",
-            "sender": "Rafa",
+            "sender": "Raül",
             "text": "Vaya delirio... llamar farsa a los datos oficiales solo xq no encajan en tu discurso es de ser una ignorante. Las condenas no prueban nada si no entiendes la sobrerrepresentacion y la precariedad. Deja ya de repetir bulos de derecha y lee el articulo, que tus argumentos son una basura.",
             "timestamp": 1780054287.121408,
-            "reply_to": "Irene",
+            "reply_to": "Jordi",
             "reply_text": "Qué ingenuo eres si te crees a pies juntillas los datos del Ministerio... Es una farsa maquillada para que todo parezca bajo control mientras el país se cae a pedazos. No me hagas reír con q no hay relación entre origen y delincuencia cuando las condenas dicen lo contrario. Pero claro, ahora resulta q es culpa de los abogados de oficio y no de la gente. Menuda fantasía se montan para ignorar el caos que tenemos en las calles.",
             "is_mention": true,
             "likes": 1
         },
         {
             "id": "3aea2e13-fc38-4c1c-8904-3ab1ed22be22",
-            "sender": "Sergio",
+            "sender": "Júlia",
             "text": "Me harta q se use la estadística para tapar la realidad. Los datos del artículo estarán bien, pero usarlos para decir que todo va genial es de ser un ingenuo o un cínico. Mientras los académicos se llenan la boca con porcentajes, en los barrios la falta de control fronterizo y la gestión nefasta crean una tensión insoportable. No me vengas con cuentos de que no pasa nada solo porque un Excel lo diga... es una farsa ignorar que la precariedad actual es culpa de una política migratoria desastrosa.",
             "timestamp": 1780054355.084445,
-            "reply_to": "Diego",
+            "reply_to": "Oscar",
             "reply_text": "Es increíble q se sigan repitiendo prejuicios cuando los datos del Interior son claros. La criminalidad es estable y que haya más jóvenes extranjeros no significa que haya más delincuencia por origen.",
             "is_mention": true,
             "likes": 0
         },
         {
             "id": "ae86dfd9-6c25-4544-87a8-d43f60d7c1fb",
-            "sender": "Carlos",
+            "sender": "Pau",
             "text": "Se pueden aceptar los datos sin ignorar que la precariedad real satura los servicios en muchos barrios.",
             "timestamp": 1780054424.100467,
-            "reply_to": "Rafa",
+            "reply_to": "Raül",
             "reply_text": "Vaya delirio... llamar farsa a los datos oficiales solo xq no encajan en tu discurso es de ser una ignorante. Las condenas no prueban nada si no entiendes la sobrerrepresentacion y la precariedad. Deja ya de repetir bulos de derecha y lee el articulo, que tus argumentos son una basura.",
             "is_mention": true,
             "likes": 1

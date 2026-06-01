@@ -10,7 +10,7 @@
     "messages": [
         {
             "id": "beeca186-5c8d-43ba-a27d-370af2325c09",
-            "sender": "Diego",
+            "sender": "Roger",
             "text": "Es evidente q hay una presion migratoria real,pero mantener a tanta gente en el limbo solo crea mas desorden. Regularizar con criterios claros es la via mas pragmatica y humana para organizar la economia.",
             "timestamp": 1780042743.713712,
             "reply_to": null,
@@ -20,70 +20,70 @@
         },
         {
             "id": "23ccd53a-5adc-4713-a0eb-fa0da55e28c6",
-            "sender": "Sergio",
+            "sender": "Ramon",
             "text": "Vender la regularización como una solución pragmática es una farsa absoluta. Es un parche mediocre para seguir explotando mano de obra barata mientras el sistema sigue roto. Qué ingenuo pensar que poner \"criterios claros\" arregla el problema cuando lo q necesitamos es romper con toda esa lógica neoliberal de fronteras. Me parece una mierda seguir maquillando la realidad con gestiones administrativas en lugar de cambiar el modelo entero.",
             "timestamp": 1780042789.832073,
-            "reply_to": "Diego",
+            "reply_to": "Roger",
             "reply_text": "Es evidente q hay una presion migratoria real,pero mantener a tanta gente en el limbo solo crea mas desorden. Regularizar con criterios claros es la via mas pragmatica y humana para organizar la economia.",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "24af0cf0-128d-4f85-b08a-9651c1ba4c5a",
-            "sender": "Lucia",
+            "sender": "Pol",
             "text": "Más allá de la ideología, regularizar es dar dignidad a quien ya vive y trabaja aquí. Sin papeles son invisibles y fáciles de explotar, así que darles seguridad jurídica es la mejor forma de proteger sus derechos y mejorar la convivencia. Al final, integrar a esa gente es lo más lógico tanto social como económicamente.",
             "timestamp": 1780042831.865907,
-            "reply_to": "Sergio",
+            "reply_to": "Ramon",
             "reply_text": "Vender la regularización como una solución pragmática es una farsa absoluta. Es un parche mediocre para seguir explotando mano de obra barata mientras el sistema sigue roto. Qué ingenuo pensar que poner \"criterios claros\" arregla el problema cuando lo q necesitamos es romper con toda esa lógica neoliberal de fronteras. Me parece una mierda seguir maquillando la realidad con gestiones administrativas en lugar de cambiar el modelo entero.",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "05dbcde9-a7ba-4b8f-8870-27871d3ddaa1",
-            "sender": "Irene",
+            "sender": "Lucía",
             "text": "Que ingenuidad pensar que un papelito soluciona la explotacion o la convivencia... es una farsa creer q regularizar masivamente sin control no hunde mas los salarios y colapsa los servicios publicos.",
             "timestamp": 1780042870.645855,
-            "reply_to": "Lucia",
+            "reply_to": "Pol",
             "reply_text": "Más allá de la ideología, regularizar es dar dignidad a quien ya vive y trabaja aquí. Sin papeles son invisibles y fáciles de explotar, así que darles seguridad jurídica es la mejor forma de proteger sus derechos y mejorar la convivencia. Al final, integrar a esa gente es lo más lógico tanto social como económicamente.",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "4cbe6587-d916-45d3-88a3-d101ebd7b141",
-            "sender": "Rafa",
+            "sender": "Xavi",
             "text": "Que cantidad de gilipolleces... decir q regularizar es una farsa es ignorar la vida de la gente por pura postureo ideologico. Mientras tu esperas q el sistema colapse para sentirte especial,hay miles currando en la mierda sin derechos. Priorizar la pureza teorica sobre la dignidad del trabajador es una estupidez absoluta.",
             "timestamp": 1780042913.654502,
-            "reply_to": "Sergio",
+            "reply_to": "Ramon",
             "reply_text": "Vender la regularización como una solución pragmática es una farsa absoluta. Es un parche mediocre para seguir explotando mano de obra barata mientras el sistema sigue roto. Qué ingenuo pensar que poner \"criterios claros\" arregla el problema cuando lo q necesitamos es romper con toda esa lógica neoliberal de fronteras. Me parece una mierda seguir maquillando la realidad con gestiones administrativas en lugar de cambiar el modelo entero.",
             "is_mention": true,
             "likes": 2
         },
         {
             "id": "eed44e4e-9cd0-4ccd-adf6-bc280b2a6dff",
-            "sender": "Paula",
+            "sender": "Juan",
             "text": "Faltan garantias sociales reales aqui.",
             "timestamp": 1780042952.698885,
-            "reply_to": "Rafa",
+            "reply_to": "Xavi",
             "reply_text": "Que cantidad de gilipolleces... decir q regularizar es una farsa es ignorar la vida de la gente por pura postureo ideologico. Mientras tu esperas q el sistema colapse para sentirte especial,hay miles currando en la mierda sin derechos. Priorizar la pureza teorica sobre la dignidad del trabajador es una estupidez absoluta.",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "5afa4277-a405-4d3b-8ad4-ba084fd82254",
-            "sender": "Nuria",
+            "sender": "Sara",
             "text": "Menuda sarta de gilipolleces. Solo un ignorante o un racista piensa que los papeles hunden salarios; al reves, evitan la explotacion y la mierda laboral.",
             "timestamp": 1780043003.516258,
-            "reply_to": "Irene",
+            "reply_to": "Lucía",
             "reply_text": "Que ingenuidad pensar que un papelito soluciona la explotacion o la convivencia... es una farsa creer q regularizar masivamente sin control no hunde mas los salarios y colapsa los servicios publicos.",
             "is_mention": true,
             "likes": 0
         },
         {
             "id": "2f6e7bc6-7823-4053-b08e-2053c83e4d27",
-            "sender": "Carlos",
+            "sender": "Jordi",
             "text": "El problema es que regularizar a tantos de golpe colapsaría los servicios públicos y la vivienda.",
             "timestamp": 1780043056.230865,
-            "reply_to": "Nuria",
+            "reply_to": "Sara",
             "reply_text": "Menuda sarta de gilipolleces. Solo un ignorante o un racista piensa que los papeles hunden salarios; al reves, evitan la explotacion y la mierda laboral.",
             "is_mention": false,
             "likes": 0

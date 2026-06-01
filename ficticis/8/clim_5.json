@@ -10,7 +10,7 @@
     "messages": [
         {
             "id": "14766382-d8f2-4c4e-b3af-c9670bbf26c9",
-            "sender": "Lucia",
+            "sender": "Sònia",
             "text": "Es increíble que haya tanta gente que aún dude del cambio climático con los datos que tenemos. Totalmente de acuerdo en que hace falta ir mucho más allá con las renovables y las políticas verdes si queremos solucionar esto.",
             "timestamp": 1779880678.638879,
             "reply_to": null,
@@ -20,70 +20,70 @@
         },
         {
             "id": "a093cc2e-487b-46ac-915b-a309af330bdd",
-            "sender": "Sergio",
+            "sender": "Paula",
             "text": "Que ingenuidad... las politicas del gobierno son una farsa total. Solo hacen maquillaje verde mientras el planeta se quema. estupido!",
             "timestamp": 1779880726.763321,
-            "reply_to": "Lucia",
+            "reply_to": "Sònia",
             "reply_text": "Es increíble que haya tanta gente que aún dude del cambio climático con los datos que tenemos. Totalmente de acuerdo en que hace falta ir mucho más allá con las renovables y las políticas verdes si queremos solucionar esto.",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "7ee1c3b7-e0e9-45ba-bf8d-4c8c693dd63f",
-            "sender": "Marta",
+            "sender": "Vila",
             "text": "No creo que sea una farsa, aunque es verdad que la transicion es compleja y no todo funciona perfecto desde el primer dia. Lo importante es que estamos moviendonos en la direccion correcta. Si nos quedamos esperando el plan ideal o criticando cada fallo, no avanzaremos nada y el tiempo corre. Prefiero mil veces avanzar paso a paso con medidas reales, aunque sean imperfectas, que quedarnos bloqueados en el cinismo. Al final, es la unica forma practica de gestionar el problema.",
             "timestamp": 1779880780.093574,
-            "reply_to": "Sergio",
+            "reply_to": "Paula",
             "reply_text": "Que ingenuidad... las politicas del gobierno son una farsa total. Solo hacen maquillaje verde mientras el planeta se quema. estupido!",
             "is_mention": false,
             "likes": 0
         },
         {
             "id": "878fc21d-7ba0-400c-a803-4624e9c036d4",
-            "sender": "Ivan",
+            "sender": "Adrià",
             "text": "Vender humo con politicas verdes es muy facil, pero alguien tiene que pagar la factura. Sus soluciones son una farsa economica que solo sirve pa arruinarnos mientras el Gobierno juega a ser ecologico.",
             "timestamp": 1779880826.810158,
-            "reply_to": "Lucia",
+            "reply_to": "Sònia",
             "reply_text": "Es increíble que haya tanta gente que aún dude del cambio climático con los datos que tenemos. Totalmente de acuerdo en que hace falta ir mucho más allá con las renovables y las políticas verdes si queremos solucionar esto.",
             "is_mention": true,
             "likes": 0
         },
         {
             "id": "15216d4c-ff32-44b6-9490-78a9a76fd797",
-            "sender": "Rafa",
+            "sender": "Núria",
             "text": "Vaya mierda de argumento. Llamar farsa a la transicion cuando nos estamos asando es de ignorantes. Despertad q el colapso es real!",
             "timestamp": 1779880870.533965,
-            "reply_to": "Sergio",
+            "reply_to": "Paula",
             "reply_text": "Que ingenuidad... las politicas del gobierno son una farsa total. Solo hacen maquillaje verde mientras el planeta se quema. estupido!",
             "is_mention": true,
             "likes": 2
         },
         {
             "id": "5347405b-3f7c-4327-8f2b-4360f34acfed",
-            "sender": "Carlos",
+            "sender": "Lucía",
             "text": "El problema es que avanzar paso a paso sin un análisis real de costes es peligroso. No se trata de cinismo, sino de pragmatismo. Estas medidas están lastrando nuestra industria y competitividad, y me parece un error imponer plazos y gastos tan agresivos sin garantías de que funcionen. Al final, estamos sacrificando la soberanía energética y la economía por un plan mal diseñado que no soluciona nada y nos deja en una posición muy débil.",
             "timestamp": 1779880921.529272,
-            "reply_to": "Marta",
+            "reply_to": "Vila",
             "reply_text": "No creo que sea una farsa, aunque es verdad que la transicion es compleja y no todo funciona perfecto desde el primer dia. Lo importante es que estamos moviendonos en la direccion correcta. Si nos quedamos esperando el plan ideal o criticando cada fallo, no avanzaremos nada y el tiempo corre. Prefiero mil veces avanzar paso a paso con medidas reales, aunque sean imperfectas, que quedarnos bloqueados en el cinismo. Al final, es la unica forma practica de gestionar el problema.",
             "is_mention": true,
             "likes": 0
         },
         {
             "id": "2194f4b6-2f03-45da-b679-40dd57ff94f7",
-            "sender": "Nuria",
+            "sender": "Isona",
             "text": "Decir q todo es una farsa es de vagos. Menuda mierda de argumento para justificar vuestra irresponsabilidad climatica.",
             "timestamp": 1779880979.489081,
-            "reply_to": "Sergio",
+            "reply_to": "Paula",
             "reply_text": "Que ingenuidad... las politicas del gobierno son una farsa total. Solo hacen maquillaje verde mientras el planeta se quema. estupido!",
             "is_mention": true,
             "likes": 0
         },
         {
             "id": "9e468e41-7dc1-4c57-ac91-47da7ff6a3b1",
-            "sender": "Pablo",
+            "sender": "Ismael",
             "text": "El cambio climático es real, pero las medidas actuales son insuficientes.",
             "timestamp": 1779881034.581389,
-            "reply_to": "Nuria",
+            "reply_to": "Isona",
             "reply_text": "Decir q todo es una farsa es de vagos. Menuda mierda de argumento para justificar vuestra irresponsabilidad climatica.",
             "is_mention": false,
             "likes": 0
