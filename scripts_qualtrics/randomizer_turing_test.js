@@ -1,8 +1,14 @@
 Qualtrics.SurveyEngine.addOnload(function() {
 
+    let comprovacio = Qualtrics.SurveyEngine.getJSEmbeddedData("Categoria_1");
+    if (comprovacio && comprovacio.trim() !== "") {
+        console.log("El cervell ja havia assignat les notícies. Es manté la selecció original.");
+        return;
+    }
+
     const allPosts = [
         { id: 'clim_1', topic: 'clima', news: 1 },
-        { id: 'clim_2', topic: 'clima', news: 1 }, 
+        { id: 'clim_2', topic: 'clima', news: 1 },
         { id: 'clim_3', topic: 'clima', news: 2 },
         { id: 'clim_4', topic: 'clima', news: 2 },
         { id: 'clim_5', topic: 'clima', news: 2 },
@@ -19,7 +25,7 @@ Qualtrics.SurveyEngine.addOnload(function() {
         { id: 'imm_8', topic: 'immigració', news: 8 },
         { id: 'imm_9', topic: 'immigració', news: 9 },
         { id: 'imm_10', topic: 'immigració', news: 10 },
-        { id: 'imm_11', topic: 'immigració', news: 11 }, 
+        { id: 'imm_11', topic: 'immigració', news: 11 },
         { id: 'imm_12', topic: 'immigració', news: 12 },
         { id: 'imm_13', topic: 'immigració', news: 12 }
     ];
@@ -41,7 +47,7 @@ Qualtrics.SurveyEngine.addOnload(function() {
     let posts30 = posts.filter(p => p.id === 'clim_2' || p.id === 'imm_11');
     let postsRest = posts.filter(p => p.news !== 1 && p.news !== 11);
 
-    while(!validSelection && attempts < 1000) {
+    while (!validSelection && attempts < 1000) {
         attempts++;
 
         let shuffled30 = getRandomSample(posts30, 2);
@@ -83,17 +89,17 @@ Qualtrics.SurveyEngine.addOnload(function() {
 
     finalSelection.forEach((post, index) => {
         let postNum = index + 1;
-
         let fileUrl = baseUrl + "/" + post.type + "/" + post.length + "/" + post.id + ".json";
-
-        Qualtrics.SurveyEngine.setJSEmbeddedData("URL_Post_" + postNum, fileUrl);
-        Qualtrics.SurveyEngine.setJSEmbeddedData("Categoria_" + postNum, post.type);
-        Qualtrics.SurveyEngine.setJSEmbeddedData("Tema_" + postNum, post.topic);
-        Qualtrics.SurveyEngine.setJSEmbeddedData("Mida_" + postNum, post.length);
-        Qualtrics.SurveyEngine.setJSEmbeddedData("ID_" + postNum, post.id);
-        Qualtrics.SurveyEngine.setJSEmbeddedData("Noticia_" + postNum, post.news); 
+        Qualtrics.SurveyEngine.setJSEmbeddedData("URL_Post_" + postNum, String(fileUrl));
+        Qualtrics.SurveyEngine.setJSEmbeddedData("Categoria_" + postNum, String(post.type));
+        Qualtrics.SurveyEngine.setJSEmbeddedData("Tema_" + postNum, String(post.topic));
+        Qualtrics.SurveyEngine.setJSEmbeddedData("Mida_" + postNum, String(post.length));
+        Qualtrics.SurveyEngine.setJSEmbeddedData("ID_" + postNum, String(post.id));
+        Qualtrics.SurveyEngine.setJSEmbeddedData("Noticia_" + postNum, String(post.news));
     });
 
+    // Desa tot en una variable global perquè la Text Entry ho pugui llegir
+    window.TURING_FINAL = finalSelection;
+    window.TURING_BASE_URL = baseUrl;
     console.log("RANDOMISER DONE", finalSelection);
-    console.log("URL_Post_1 set to:", Qualtrics.SurveyEngine.getJSEmbeddedData("URL_Post_1"));
 });

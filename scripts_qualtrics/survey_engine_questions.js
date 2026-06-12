@@ -1,19 +1,90 @@
 Qualtrics.SurveyEngine.addOnload(function() {
 
-    var nextButton = document.getElementById('NextButton');
-    if (nextButton) {
-        nextButton.disabled = true;
-        nextButton.style.opacity = '0.5';
-        nextButton.style.cursor = 'not-allowed';
-        nextButton.title = 'Si no puedes continuar, asegúrate de haber leído la conversación hasta el final.';
+    var scrollDone = false;
+
+    // --- 1. Funció per obtenir el document correcte (iframe o principal) ---
+    function getIframeDoc() {
+        var iframe = document.querySelector('iframe#preview-view') ||
+                     window.parent.document.querySelector('iframe#preview-view');
+        if (iframe && iframe.contentDocument) return iframe.contentDocument;
+        if (iframe && iframe.contentWindow) return iframe.contentWindow.document;
+        return null;
     }
 
-    var numBloc = 1;
+    function getNextButton() {
+        // Prova primer al document actual
+        var btn = document.getElementById('next-button') ||
+                  document.querySelector('[aria-label="Next page"]') ||
+                  document.querySelector('.navigation-button');
+        if (btn) return btn;
 
+        // Si no, busca dins l'iframe
+        var iDoc = getIframeDoc();
+        if (iDoc) {
+            return iDoc.getElementById('next-button') ||
+                   iDoc.querySelector('[aria-label="Next page"]') ||
+                   iDoc.querySelector('.navigation-button');
+        }
+        return null;
+    }
+
+    // --- 2. Bloqueig del botó ---
+    function bloquejarBoto() {
+        var btn = getNextButton();
+        if (btn) {
+            btn.disabled = true;
+            btn.setAttribute('disabled', 'disabled');
+            btn.style.opacity = '0.4';
+            btn.style.cursor = 'not-allowed';
+            btn.style.pointerEvents = 'none';
+        }
+
+        // Afegim missatge visible si no existeix ja
+        if (!document.getElementById('scroll-warning')) {
+            var msg = document.createElement('div');
+            msg.id = 'scroll-warning';
+            msg.innerText = '⚠️ Si no puedes continuar, asegúrate de haber leído la conversación hasta el final.';
+            msg.style.cssText = 'font-size:13px;color:#b45309;background:#fef9c3;border:1px solid #fde68a;border-radius:6px;padding:8px 12px;margin-bottom:8px;text-align:center;font-family:Inter,sans-serif;';
+
+            var btn = getNextButton();
+            if (btn && btn.parentNode) {
+                btn.parentNode.insertBefore(msg, btn);
+            }
+        }
+    }
+
+    function desbloquejarBoto() {
+        if (scrollDone) return;
+        scrollDone = true;
+        clearInterval(reblockInterval);
+
+        // Eliminem el missatge
+        var msg = document.getElementById('scroll-warning');
+        if (msg) msg.parentNode.removeChild(msg);
+
+        var btn = getNextButton();
+        if (btn) {
+            btn.disabled = false;
+            btn.removeAttribute('disabled');
+            btn.style.opacity = '';
+            btn.style.cursor = '';
+            btn.style.pointerEvents = '';
+        }
+    }
+
+    // Re-bloqueig continu fins que l'usuari faci scroll (React re-renderitza el botó)
+    var reblockInterval = setInterval(function() {
+        if (!scrollDone) bloquejarBoto();
+    }, 300);
+
+    bloquejarBoto();
+
+    // --- 3. Càrrega del JSON ---
+    var numBloc = 1;
     var jsonUrl = Qualtrics.SurveyEngine.getJSEmbeddedData('URL_Post_' + numBloc);
 
     if (!jsonUrl) {
-        document.getElementById('reddit-messages').innerHTML = "<p style='color:red;'>Error: No s'ha rebut cap ruta de JSON.</p>";
+        document.getElementById('reddit-messages').innerHTML = "<p style='color:red;'>Error: No se ha recibido ninguna ruta de JSON.</p>";
         return;
     }
 
@@ -21,7 +92,7 @@ Qualtrics.SurveyEngine.addOnload(function() {
 
     fetch(jsonUrl)
         .then(function(response) {
-            if (!response.ok) throw new Error("No s'ha trobat el fitxer: " + jsonUrl);
+            if (!response.ok) throw new Error("No se ha encontrado el archivo: " + jsonUrl);
             return response.json();
         })
         .then(function(data) {
@@ -84,30 +155,23 @@ Qualtrics.SurveyEngine.addOnload(function() {
                 list.appendChild(card);
             });
 
-            setTimeout(function() {
-                var wrapper = document.getElementById('session-wrapper');
-                
-                function encendreBoto() {
-                    if (nextButton) {
-                        nextButton.disabled = false;
-                        nextButton.style.opacity = '1';
-                        nextButton.style.cursor = 'pointer';
-                        nextButton.title = '';
-                    }
+            // --- 4. Lògica de scroll sobre #session-wrapper ---
+            function checkScroll() {
+                if (scrollDone) return;
+                var el = document.getElementById('session-wrapper');
+                if (!el) return;
+                if ((el.scrollHeight - el.scrollTop) <= (el.clientHeight + 60)) {
+                    desbloquejarBoto();
                 }
+            }
 
-                if (wrapper.scrollHeight <= wrapper.clientHeight + 10) {
-                    encendreBoto();
-                } else {
-                    wrapper.addEventListener('scroll', function scrollCheck() {
-                        if (wrapper.scrollHeight - wrapper.scrollTop <= wrapper.clientHeight + 30) {
-                            encendreBoto();
-                            wrapper.removeEventListener('scroll', scrollCheck);
-                        }
-                    });
-                }
-            }, 300);
+            var wrapperEl = document.getElementById('session-wrapper');
+            if (wrapperEl) {
+                wrapperEl.addEventListener('scroll', checkScroll, { passive: true });
+            }
 
+            setTimeout(checkScroll, 800);
+            setTimeout(checkScroll, 1500);
         })
         .catch(function(err) {
             document.getElementById('reddit-messages').innerHTML =
