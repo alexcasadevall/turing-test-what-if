@@ -82,17 +82,17 @@ Qualtrics.SurveyEngine.addOnload(function() {
     }
 
     // --- 4. Càrrega de les URLs ---
-    var url1 = Qualtrics.SurveyEngine.getJSEmbeddedData('MG_URL_1');
-    var url2 = Qualtrics.SurveyEngine.getJSEmbeddedData('MG_URL_2');
-    var url3 = Qualtrics.SurveyEngine.getJSEmbeddedData('MG_URL_3');
+    var urlA = Qualtrics.SurveyEngine.getJSEmbeddedData('MG_URL_A');
+    var urlB = Qualtrics.SurveyEngine.getJSEmbeddedData('MG_URL_B');
+    var urlC = Qualtrics.SurveyEngine.getJSEmbeddedData('MG_URL_C');
 
-    if (!url1 || !url2 || !url3) {
+    if (!urlA || !urlB || !urlC) {
         document.getElementById('mg-news-title').innerHTML =
             "<span style='color:#ef4444;'>Error: Falten dades. Intenta recarregar la pàgina.</span>";
         return;
     }
 
-    var urls = [url1, url2, url3];
+    var urls = [urlA, urlB, urlC];
     var COLORS = ['#ef4444', '#3b82f6', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#6366f1'];
 
     Promise.all(urls.map(function(u) {

@@ -22,12 +22,12 @@ Qualtrics.SurveyEngine.addOnload(function() {
         var mg = window.MG_FINAL;
         var valor =
             "MG_Tema=" + mg.tema + "|" +
-            "MG_Forum_1_Tractament=" + mg.tractaments[0] + "|" +
-            "MG_Forum_2_Tractament=" + mg.tractaments[1] + "|" +
-            "MG_Forum_3_Tractament=" + mg.tractaments[2] + "|" +
-            "MG_URL_1=" + mg.url1 + "|" +
-            "MG_URL_2=" + mg.url2 + "|" +
-            "MG_URL_3=" + mg.url3;
+            "MG_Forum_A_Tractament=" + mg.tractaments[0] + "|" +
+            "MG_Forum_B_Tractament=" + mg.tractaments[1] + "|" +
+            "MG_Forum_C_Tractament=" + mg.tractaments[2] + "|" +
+            "MG_URL_A=" + mg.urlA + "|" +
+            "MG_URL_B=" + mg.urlB + "|" +
+            "MG_URL_C=" + mg.urlC;
 
         var input = self.getQuestionContainer().querySelector('textarea');
         if (input) {

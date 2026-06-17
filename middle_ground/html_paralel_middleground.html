@@ -1,6 +1,5 @@
-<style type="text/css">/* Eliminem els límits d'amplada dels contenidors de Qualtrics */
-    #question-display-wrapper-QID21,
-    #question-display-QID21,
+<style type="text/css">div[id^="question-display-wrapper-"],
+    div[id^="question-display-"],
     .overflow-container.shadowbox,
     .overflow-content.shadowbox-inner {
         max-width: 100% !important;
@@ -16,8 +15,7 @@
 
 <div id="mg-news-title" style="font-weight:800;font-size:18px;color:#1e293b;line-height:1.25;margin-bottom:8px;">Carregant notícia...</div>
 
-<div id="mg-news-body" style="font-size:14px;color:#64748b;line-height:1.6;white-space:pre-wrap;">&nbsp;</div>
-</div>
+<div id="mg-news-body" style="font-size:14px;color:#64748b;line-height:1.6;white-space:pre-wrap;max-height:150px;overflow-y:auto;margin-bottom:30px;">&nbsp;</div>
 
 <div style="display:flex;flex-direction:row;gap:16px;width:100%;box-sizing:border-box;align-items:flex-start;">
 <div style="flex:1 1 0;min-width:0;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
@@ -41,6 +39,7 @@
 
 <div id="session-wrapper-3" style="max-height:520px;overflow-y:auto;padding:12px;box-sizing:border-box;">
 <div id="reddit-messages-3" style="color:#64748b;">Carregant...</div>
+</div>
 </div>
 </div>
 </div>

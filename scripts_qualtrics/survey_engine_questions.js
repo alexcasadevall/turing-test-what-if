@@ -1,5 +1,32 @@
 Qualtrics.SurveyEngine.addOnload(function() {
 
+    var overlay = document.createElement('div');
+    overlay.id = 'disclaimer-overlay';
+    overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(15,23,42,0.75);z-index:99999;display:flex;align-items:center;justify-content:center;';
+    overlay.innerHTML =
+        '<div style="background:white;border-radius:12px;padding:32px;max-width:480px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.3);text-align:center;font-family:Inter,sans-serif;">' +
+            '<div style="font-size:18px;font-weight:700;color:#1e293b;margin-bottom:16px;">Antes de empezar</div>' +
+            '<div style="font-size:15px;color:#475569;line-height:1.6;margin-bottom:24px;">Lee atentamente las siguientes conversaciones y responde a las preguntas. Ten en cuenta que no hace falta leer la noticia a menos que necesites contexto.</div>' +
+            '<button id="disclaimer-ok-btn" style="background:#6366f1;color:white;border:none;padding:10px 32px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;">Entendido</button>' +
+        '</div>';
+    document.body.appendChild(overlay);
+
+    var okBtn = document.getElementById('disclaimer-ok-btn');
+    okBtn.disabled = true;
+    okBtn.style.opacity = '0.5';
+    okBtn.style.cursor = 'not-allowed';
+
+    setTimeout(function() {
+        okBtn.disabled = false;
+        okBtn.style.opacity = '1';
+        okBtn.style.cursor = 'pointer';
+    }, 3000);
+
+    okBtn.addEventListener('click', function() {
+        if (okBtn.disabled) return;
+        overlay.remove();
+    });
+	
     var scrollDone = false;
 
     // --- 1. Funció per obtenir el document correcte (iframe o principal) ---
