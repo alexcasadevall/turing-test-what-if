@@ -3,12 +3,19 @@ Qualtrics.SurveyEngine.addOnload(function() {
     var scrollDone = false;
     var scrollStatus = { 1: false, 2: false, 3: false };
 
-    // --- 1. Funcions per obtenir el botó (igual que el Turing que funciona) ---
     function getIframeDoc() {
-        var iframe = document.querySelector('iframe#preview-view') ||
-                     window.parent.document.querySelector('iframe#preview-view');
-        if (iframe && iframe.contentDocument) return iframe.contentDocument;
-        if (iframe && iframe.contentWindow) return iframe.contentWindow.document;
+        try {
+            var iframe = document.querySelector('iframe#preview-view');
+            if (!iframe && window.parent && window.parent !== window) {
+                iframe = window.parent.document.querySelector('iframe#preview-view');
+            }
+            if (iframe) {
+                if (iframe.contentDocument) return iframe.contentDocument;
+                if (iframe.contentWindow) return iframe.contentWindow.document;
+            }
+        } catch (e) {
+            console.log("Avís: Escut actiu. Iframe superior protegit (normal en dispositius mòbils reals).");
+        }
         return null;
     }
 
@@ -26,7 +33,6 @@ Qualtrics.SurveyEngine.addOnload(function() {
         return null;
     }
 
-    // --- 2. Bloqueig i desbloqueig del botó ---
     function bloquejarBoto() {
         var btn = getNextButton();
         if (btn) {
@@ -67,21 +73,18 @@ Qualtrics.SurveyEngine.addOnload(function() {
         }
     }
 
-    // Re-bloqueig continu fins que l'usuari hagi llegit tot
     var reblockInterval = setInterval(function() {
         if (!scrollDone) bloquejarBoto();
     }, 300);
 
     bloquejarBoto();
 
-    // --- 3. Comprovació: tots 3 fòrums llegits? ---
     function checkAllScrolled() {
         if (scrollStatus[1] && scrollStatus[2] && scrollStatus[3]) {
             desbloquejarBoto();
         }
     }
 
-    // --- 4. Càrrega de les URLs ---
     var urlA = Qualtrics.SurveyEngine.getJSEmbeddedData('MG_URL_A');
     var urlB = Qualtrics.SurveyEngine.getJSEmbeddedData('MG_URL_B');
     var urlC = Qualtrics.SurveyEngine.getJSEmbeddedData('MG_URL_C');
@@ -103,7 +106,6 @@ Qualtrics.SurveyEngine.addOnload(function() {
     }))
     .then(function(dataArray) {
 
-        // Notícia (del primer fòrum, compartida)
         var baseData = dataArray[0];
         if (baseData.post_original) {
             document.getElementById('mg-news-agency').innerText = baseData.post_original.agency || '';
@@ -111,7 +113,6 @@ Qualtrics.SurveyEngine.addOnload(function() {
             document.getElementById('mg-news-body').innerText = baseData.post_original.body || '';
         }
 
-        // --- 5. Renderització de cada fòrum ---
         dataArray.forEach(function(data, index) {
             var forumNum = index + 1;
             var list = document.getElementById('reddit-messages-' + forumNum);
@@ -131,7 +132,6 @@ Qualtrics.SurveyEngine.addOnload(function() {
                 var card = document.createElement('div');
                 card.style.cssText = 'background:white;border:1px solid #e2e8f0;border-left:4px solid ' + col + ';border-radius:12px;padding:12px;margin-bottom:10px;font-family:Inter,sans-serif;';
 
-                // Header: avatar + nom + hora
                 var msgTime = new Date(m.timestamp * 1000).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
                 var headerHtml = '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">' +
                     '<div style="display:flex;align-items:center;gap:8px;">' +
@@ -141,7 +141,6 @@ Qualtrics.SurveyEngine.addOnload(function() {
                     '<span style="font-size:11px;color:#94a3b8;">' + msgTime + '</span>' +
                     '</div>';
 
-                // Quote (només si hi ha reply_to i reply_text)
                 var quoteHtml = '';
                 if (m.reply_to && m.reply_text) {
                     var truncated = m.reply_text.length > 60 ? m.reply_text.substring(0, 60) + '...' : m.reply_text;
@@ -151,10 +150,8 @@ Qualtrics.SurveyEngine.addOnload(function() {
                         '</div>';
                 }
 
-                // Cos del missatge
                 var bodyHtml = '<div style="font-size:13px;line-height:1.5;color:#1e293b;margin-bottom:10px;">' + m.text + '</div>';
 
-                // Footer: Reply, Like, Mention, Report
                 var likeColor = m.likes > 0 ? '#ef4444' : '#94a3b8';
                 var likeLabel = m.likes > 0 ? String(m.likes) : 'Like';
                 var footerHtml = '<div style="display:flex;gap:16px;margin-top:4px;">' +
@@ -168,7 +165,6 @@ Qualtrics.SurveyEngine.addOnload(function() {
                 list.appendChild(card);
             });
 
-            // --- 6. Lògica de scroll per cada fòrum ---
             setTimeout(function() {
                 var wrapper = document.getElementById('session-wrapper-' + forumNum);
                 if (!wrapper) return;
@@ -182,8 +178,6 @@ Qualtrics.SurveyEngine.addOnload(function() {
                 }
 
                 wrapper.addEventListener('scroll', checkScroll, { passive: true });
-
-                // Si el contingut ja cap sense scroll
                 checkScroll();
                 setTimeout(checkScroll, 500);
             }, 400);

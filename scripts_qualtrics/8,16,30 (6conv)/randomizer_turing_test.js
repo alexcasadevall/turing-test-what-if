@@ -23,7 +23,7 @@ Qualtrics.SurveyEngine.addOnload(function() {
             window.TURING_FINAL = window.parent.TURING_FINAL;
             window.TURING_BASE_URL = window.parent.TURING_BASE_URL;
 
-            // BLINDATGE EXTRA: Forcem la gravació de dades a Qualtrics per a aquesta segona finestra clonada
+            // BLINDATGE EXTRA: Forcem la gravació de dades a Qualtrics per a aquesta segona finestra
             window.TURING_FINAL.forEach((post, index) => {
                 let postNum = index + 1;
                 let fileUrl = window.TURING_BASE_URL + "/" + post.type + "/" + post.length + "/" + post.id + ".json";
@@ -62,9 +62,9 @@ Qualtrics.SurveyEngine.addOnload(function() {
         { id: 'imm_13', topic: 'immigració', news: 12 }
     ];
 
-    // MODIFICACIÓ: Ara totes les notícies (incloses la 1 i la 11) van exclusivament a mides de 8 i 16
     let posts = allPosts.map(p => {
-        return { id: p.id, topic: p.topic, news: p.news, lengths: [8, 16] };
+        let mides = (p.id === 'imm_11' || p.id === 'clim_2') ? [8, 16, 30] : [8, 16];
+        return { id: p.id, topic: p.topic, news: p.news, lengths: mides };
     });
 
     function getRandomSample(array, size) {
@@ -76,48 +76,49 @@ Qualtrics.SurveyEngine.addOnload(function() {
     let finalSelection = [];
     let attempts = 0;
 
-    // Dividim el pool total per temes per forçar la simetria perfecta de forma directa
-    let postsClima = posts.filter(p => p.topic === 'clima');
-    let postsImm = posts.filter(p => p.topic === 'immigració');
+    let posts30 = posts.filter(p => p.id === 'clim_2' || p.id === 'imm_11');
+    let postsRest = posts.filter(p => p.news !== 1 && p.news !== 11);
 
     while (!validSelection && attempts < 1000) {
         attempts++;
 
-        let sampleClima = getRandomSample(postsClima, 2);
-        let sampleImm = getRandomSample(postsImm, 2);
+        let shuffled30 = getRandomSample(posts30, 2);
+        let real30 = { type: 'reals', id: shuffled30[0].id, topic: shuffled30[0].topic, length: 30, news: shuffled30[0].news };
+        let fake30 = { type: 'ficticis', id: shuffled30[1].id, topic: shuffled30[1].topic, length: 30, news: shuffled30[1].news };
 
-        // REGLA D'UNICITAT DE NOTÍCIA: Ajuntem els 4 posts i verifiquem que provinguin de 4 notícies de base diferents
-        let allSampled = [sampleClima[0], sampleClima[1], sampleImm[0], sampleImm[1]];
-        let usedNews = new Set(allSampled.map(p => p.news));
+        let sampleRest = getRandomSample(postsRest, 4);
+
+        let usedNews = new Set(sampleRest.map(p => p.news));
         if (usedNews.size !== 4) continue;
 
-        // BALANÇ DE MIDES SIMÈTRIC: Generem parelles de mides [8, 16] oposades per a cada bloc
+        let realTopics = [real30.topic, sampleRest[0].topic, sampleRest[1].topic];
+        let fakeTopics = [fake30.topic, sampleRest[2].topic, sampleRest[3].topic];
+        if (!realTopics.includes('clima') || !realTopics.includes('immigració')) continue;
+        if (!fakeTopics.includes('clima') || !fakeTopics.includes('immigració')) continue;
+
         let sizesReal = [8, 16].sort(() => 0.5 - Math.random());
         let sizesFake = [8, 16].sort(() => 0.5 - Math.random());
 
-        // Es construeix la llista final de 4 elements barrejant equilibradament temes i categories:
-        // - Reals: 1 clima, 1 immigració (mides 8 i 16 creuades)
-        // - Ficticis: 1 clima, 1 immigració (mides 8 i 16 creuades)
         let realPosts = [
-            { type: 'reals', id: sampleClima[0].id, topic: sampleClima[0].topic, length: sizesReal[0], news: sampleClima[0].news },
-            { type: 'reals', id: sampleImm[0].id, topic: sampleImm[0].topic, length: sizesReal[1], news: sampleImm[0].news }
+            real30,
+            { type: 'reals', id: sampleRest[0].id, topic: sampleRest[0].topic, length: sizesReal[0], news: sampleRest[0].news },
+            { type: 'reals', id: sampleRest[1].id, topic: sampleRest[1].topic, length: sizesReal[1], news: sampleRest[1].news }
         ];
 
         let fakePosts = [
-            { type: 'ficticis', id: sampleClima[1].id, topic: sampleClima[1].topic, length: sizesFake[0], news: sampleClima[1].news },
-            { type: 'ficticis', id: sampleImm[1].id, topic: sampleImm[1].topic, length: sizesFake[1], news: sampleImm[1].news }
+            fake30,
+            { type: 'ficticis', id: sampleRest[2].id, topic: sampleRest[2].topic, length: sizesFake[0], news: sampleRest[2].news },
+            { type: 'ficticis', id: sampleRest[3].id, topic: sampleRest[3].topic, length: sizesFake[1], news: sampleRest[3].news }
         ];
 
         finalSelection = realPosts.concat(fakePosts);
         validSelection = true;
     }
 
-    // Barregem l'ordre de presentació de les 4 converses seleccionades
     finalSelection.sort(() => 0.5 - Math.random());
 
     let baseUrl = "https://alexcasadevall.github.io/turing-test-what-if";
 
-    // Gravació de dades: la llista ara té 4 ítems, pel que omplirà automàticament els blocs de l'1 al 4
     finalSelection.forEach((post, index) => {
         let postNum = index + 1;
         let fileUrl = baseUrl + "/" + post.type + "/" + post.length + "/" + post.id + ".json";

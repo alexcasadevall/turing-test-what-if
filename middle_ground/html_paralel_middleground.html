@@ -1,4 +1,5 @@
-<style type="text/css">div[id^="question-display-wrapper-"],
+<style type="text/css">
+    div[id^="question-display-wrapper-"],
     div[id^="question-display-"],
     .overflow-container.shadowbox,
     .overflow-content.shadowbox-inner {
@@ -7,6 +8,16 @@
         overflow: visible !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
+    }
+
+    @media (max-width: 550px) {
+        #mg-outer .forums-container {
+            flex-direction: column !important;
+        }
+        #mg-outer .forums-container > div {
+            width: 100% !important;
+            flex: none !important;
+        }
     }
 </style>
 <div id="mg-outer" style="width: 100%; box-sizing: border-box;">
@@ -17,7 +28,7 @@
 
 <div id="mg-news-body" style="font-size:14px;color:#64748b;line-height:1.6;white-space:pre-wrap;max-height:150px;overflow-y:auto;margin-bottom:30px;">&nbsp;</div>
 
-<div style="display:flex;flex-direction:row;gap:16px;width:100%;box-sizing:border-box;align-items:flex-start;">
+<div class="forums-container" style="display:flex;flex-direction:row;gap:16px;width:100%;box-sizing:border-box;align-items:flex-start;">
 <div style="flex:1 1 0;min-width:0;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
 <div style="background:#f1f5f9;padding:10px;text-align:center;border-bottom:1px solid #e2e8f0;font-weight:700;color:#334155;font-family:Inter,sans-serif;">A</div>
 

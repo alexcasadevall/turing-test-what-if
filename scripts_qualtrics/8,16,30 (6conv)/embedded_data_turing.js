@@ -16,8 +16,7 @@ Qualtrics.SurveyEngine.addOnload(function() {
     setTimeout(function() {
         var parts = [];
 
-        // MODIFICACIÓ CRÍTICA: Canviem el límit de 6 a 4 per sincronitzar-lo amb el nou Cervell
-        for (var i = 1; i <= 4; i++) {
+        for (var i = 1; i <= 6; i++) {
             var fileUrl = Qualtrics.SurveyEngine.getJSEmbeddedData("URL_Post_" + i);
             var categoria = Qualtrics.SurveyEngine.getJSEmbeddedData("Categoria_" + i);
             var tema = Qualtrics.SurveyEngine.getJSEmbeddedData("Tema_" + i);
@@ -44,18 +43,18 @@ Qualtrics.SurveyEngine.addOnload(function() {
 
         var valor = parts.join(';');
 
-        // MODIFICACIÓ DE SEGURETAT: Selector universal adaptat al disseny Classic/Modern
-        var input = self.getQuestionContainer().querySelector('textarea, input');
+        var input = self.getQuestionContainer().querySelector('textarea');
         if (input) {
-            var proto = (input.tagName === 'TEXTAREA') ? window.HTMLTextAreaElement.prototype : window.HTMLInputElement.prototype;
-            var nativeInputValueSetter = Object.getOwnPropertyDescriptor(proto, 'value').set;
+            var nativeInputValueSetter = Object.getOwnPropertyDescriptor(
+                window.HTMLTextAreaElement.prototype, 'value'
+            ).set;
             nativeInputValueSetter.call(input, valor);
     
             input.dispatchEvent(new Event('input', { bubbles: true }));
             input.dispatchEvent(new Event('change', { bubbles: true }));
             console.log("TEXT ENTRY ESCRIT OK:", valor);
         } else {
-            console.log("ERROR: no s'ha trobat el camp de text");
+            console.log("ERROR: no s'ha trobat el camp textarea");
         }
     }, 1000);
 });
