@@ -1,92 +1,92 @@
 {
-    "post_original": {
-        "agency": "INFOLIBRE",
-        "title": "El nuevo reglamento de extranjería permitirá regularizar a 900.000 migrantes en tres años",
-        "body": "El Consejo de Ministros ha aprobado este martes una reforma del reglamento de la ley de extranjería que reduce plazos y simplifica requisitos para regularizar a migrantes que viven en España sin papeles, del que podrían beneficiarse unas 300.000 personas cada año en los próximos tres años, según informa EFE.\n\nAsí lo ha señalado la ministra de Inclusión, Seguridad Social y Migraciones, Elma Saiz, en la rueda de prensa posterior al Consejo de Ministros, en el que ha detallado los principales cambios de la que ha calificado como “la reforma más integral y ambiciosa“ de este texto desde que entró en vigor, hace 13 años.\n\nEntre sus novedades, esta modificación reduce el tiempo de permanencia en España necesario para acceder a las figuras de arraigo de tres a dos años, establece que todos los visados tendrán una duración inicial de un año, incorpora mecanismos de protección para los trabajadores migrantes de temporada y refuerza la reagrupación familiar.",
-        "author": "Alex",
-        "timestamp": 1780041928.719011
+  "post_original": {
+    "agency": "INFOLIBRE",
+    "title": "El nuevo reglamento de extranjería permitirá regularizar a 900.000 migrantes en tres años",
+    "body": "El Consejo de Ministros ha aprobado este martes una reforma del reglamento de la ley de extranjería que reduce plazos y simplifica requisitos para regularizar a migrantes que viven en España sin papeles, del que podrían beneficiarse unas 300.000 personas cada año en los próximos tres años, según informa EFE.\n\nAsí lo ha señalado la ministra de Inclusión, Seguridad Social y Migraciones, Elma Saiz, en la rueda de prensa posterior al Consejo de Ministros, en el que ha detallado los principales cambios de la que ha calificado como “la reforma más integral y ambiciosa“ de este texto desde que entró en vigor, hace 13 años.\n\nEntre sus novedades, esta modificación reduce el tiempo de permanencia en España necesario para acceder a las figuras de arraigo de tres a dos años, establece que todos los visados tendrán una duración inicial de un año, incorpora mecanismos de protección para los trabajadores migrantes de temporada y refuerza la reagrupación familiar.",
+    "author": "Alex",
+    "timestamp": 1783948385.152028
+  },
+  "num_participants": 10,
+  "messages": [
+    {
+      "id": "c61620f9-5618-4579-9e31-c70e95174b7e",
+      "sender": "Sara",
+      "text": "La verdad es que esta reforma es super necesaria para frenar la explotacion laboral. Reducir el arraigo de 3 a 2 años va a ayudar un montón a que no les sigan pagando una miseria por no tener papeles. Y menos cuento con eso del efecto llamada, que es un bulo que siempre usan para no solucionar nada de fondo",
+      "timestamp": 1783948450.1488707,
+      "reply_to": null,
+      "reply_text": null,
+      "is_mention": false,
+      "likes": 0
     },
-    "num_participants": 10,
-    "messages": [
-        {
-            "id": "78ad543c-4740-48ce-8ad1-7086c8859eb4",
-            "sender": "Carla",
-            "text": "Me parece una medida sensata para regularizar una situacion q ya existe en nuestras calles. Si se implementa con un seguimiento serio y los recursos adecuados,puede ayudar a organizar mejor el mercado laboral y dar seguridad juridica a miles de personas q ya viven y trabajan aqui.",
-            "timestamp": 1780041953.775659,
-            "reply_to": null,
-            "reply_text": null,
-            "is_mention": false,
-            "likes": 0
-        },
-        {
-            "id": "db6575bf-a81e-4b0a-aa20-d2bb5d9ef5e7",
-            "sender": "Eloi",
-            "text": "Sensata? No me hagas reir. Es un parche mediocre y una farsa para quedar bien,nada mas. Seguiran explotando a la gente mientras el gobierno se llena la boca con reformas que no sirven para nada. Es una vergüenza que alguien se crea este cuento. Menuda ingenuidad pensar q con cuatro papeles arreglan el desastre que han montado. Vaya mierda de plan!",
-            "timestamp": 1780041995.963919,
-            "reply_to": "Carla",
-            "reply_text": "Me parece una medida sensata para regularizar una situacion q ya existe en nuestras calles. Si se implementa con un seguimiento serio y los recursos adecuados,puede ayudar a organizar mejor el mercado laboral y dar seguridad juridica a miles de personas q ya viven y trabajan aqui.",
-            "is_mention": false,
-            "likes": 0
-        },
-        {
-            "id": "38e1623e-fb91-4c9b-803e-6e39b2d2aa86",
-            "sender": "Irene",
-            "text": "Creo que es un paso fundamental. No se trata de un parche, sino de reconocer que hay miles de personas ya integradas que trabajan y contribuyen cada día. Regularizarlas es darles dignidad laboral y evitar que sigan en la sombra, lo cual beneficia a toda la sociedad. Es una medida práctica para organizar el mercado y mejorar la convivencia.",
-            "timestamp": 1780042032.418945,
-            "reply_to": "Eloi",
-            "reply_text": "Sensata? No me hagas reir. Es un parche mediocre y una farsa para quedar bien,nada mas. Seguiran explotando a la gente mientras el gobierno se llena la boca con reformas que no sirven para nada. Es una vergüenza que alguien se crea este cuento. Menuda ingenuidad pensar q con cuatro papeles arreglan el desastre que han montado. Vaya mierda de plan!",
-            "is_mention": false,
-            "likes": 0
-        },
-        {
-            "id": "5da1e726-5592-482e-998b-2e36af71709e",
-            "sender": "Adrià",
-            "text": "Qué ingenuidad... creer q este gobierno es capaz de gestionar algo sin q sea un caos de fraudes y papeles mal hechos. Es una farsa organizativa que solo sirve para que sigan haciendo lo que quieran",
-            "timestamp": 1780042067.284325,
-            "reply_to": "Irene",
-            "reply_text": "Creo que es un paso fundamental. No se trata de un parche, sino de reconocer que hay miles de personas ya integradas que trabajan y contribuyen cada día. Regularizarlas es darles dignidad laboral y evitar que sigan en la sombra, lo cual beneficia a toda la sociedad. Es una medida práctica para organizar el mercado y mejorar la convivencia.",
-            "is_mention": false,
-            "likes": 0
-        },
-        {
-            "id": "26b7af02-dad2-42f9-a4af-9f219f4f27ec",
-            "sender": "Pau",
-            "text": "Vaya cuento te has montado... es ridiculo q llames farsa a algo q saca a miles de personas de la explotacion. Tu ignorancia es increible si no ves q regularizarlos ayuda a la economia y les da derechos basicos. Deja de soltar mierdas y reconoce q es un avance real.",
-            "timestamp": 1780042106.371771,
-            "reply_to": "Eloi",
-            "reply_text": "Sensata? No me hagas reir. Es un parche mediocre y una farsa para quedar bien,nada mas. Seguiran explotando a la gente mientras el gobierno se llena la boca con reformas que no sirven para nada. Es una vergüenza que alguien se crea este cuento. Menuda ingenuidad pensar q con cuatro papeles arreglan el desastre que han montado. Vaya mierda de plan!",
-            "is_mention": true,
-            "likes": 2
-        },
-        {
-            "id": "09af8ad6-6e92-421a-b877-ef50348fc892",
-            "sender": "Vila",
-            "text": "No es práctico si colapsa los servicios públicos y la vivienda disponible.",
-            "timestamp": 1780042142.705283,
-            "reply_to": "Irene",
-            "reply_text": "Creo que es un paso fundamental. No se trata de un parche, sino de reconocer que hay miles de personas ya integradas que trabajan y contribuyen cada día. Regularizarlas es darles dignidad laboral y evitar que sigan en la sombra, lo cual beneficia a toda la sociedad. Es una medida práctica para organizar el mercado y mejorar la convivencia.",
-            "is_mention": true,
-            "likes": 0
-        },
-        {
-            "id": "e3baac08-5448-46da-82f4-baa796cbebb8",
-            "sender": "Èric",
-            "text": "Tipica excusa de hipocrita pa no admitir que odias que tengan papeles. Vuestra vision es una mierda y solo buscais pretextos para excluir.",
-            "timestamp": 1780042191.668076,
-            "reply_to": "Adrià",
-            "reply_text": "Qué ingenuidad... creer q este gobierno es capaz de gestionar algo sin q sea un caos de fraudes y papeles mal hechos. Es una farsa organizativa que solo sirve para que sigan haciendo lo que quieran",
-            "is_mention": true,
-            "likes": 0
-        },
-        {
-            "id": "69278c58-8ccf-44eb-b390-41ffed064031",
-            "sender": "Berta",
-            "text": "Faltan garantias reales de integracion",
-            "timestamp": 1780042240.500139,
-            "reply_to": "Irene",
-            "reply_text": "Creo que es un paso fundamental. No se trata de un parche, sino de reconocer que hay miles de personas ya integradas que trabajan y contribuyen cada día. Regularizarlas es darles dignidad laboral y evitar que sigan en la sombra, lo cual beneficia a toda la sociedad. Es una medida práctica para organizar el mercado y mejorar la convivencia.",
-            "is_mention": true,
-            "likes": 0
-        }
-    ]
+    {
+      "id": "ac0a3535-b20e-4cba-86af-a994f19dc1a5",
+      "sender": "Adrià",
+      "text": "Pero qué dices,Sara? Menuda mierda de argumento. Eso es un efecto llamada de manual porque Sánchez solo piensa en su sillón. Meter a 900.000 personas así de golpe va a hundir los servicios públicos y la vivienda, no te engañes.",
+      "timestamp": 1783948501.106981,
+      "reply_to": "Sara",
+      "reply_text": "La verdad es que esta reforma es super necesaria para frenar la explotacion laboral. Reducir el arraigo de 3 a 2 años va a ayudar un montón a que no les sigan pagando una miseria por no tener papeles. Y menos cuento con eso del efecto llamada, que es un bulo que siempre usan para no solucionar nada de fondo",
+      "is_mention": false,
+      "likes": 0
+    },
+    {
+      "id": "d57d995c-d5d8-49cd-848d-a13f4bb89a3d",
+      "sender": "Adrià",
+      "text": "Vaya cuento te traes, que buenismo el de los progres. Decir que el efecto llamada es un bulo es de no tener ni puta idea de la realidad, es pura fantasía para no ver el desastre",
+      "timestamp": 1783948521.5994968,
+      "reply_to": "Sara",
+      "reply_text": "La verdad es que esta reforma es super necesaria para frenar la explotacion laboral. Reducir el arraigo de 3 a 2 años va a ayudar un montón a que no les sigan pagando una miseria por no tener papeles. Y menos cuento con eso del efecto llamada, que es un bulo que siempre usan para no solucionar nada de fondo",
+      "is_mention": false,
+      "likes": 0
+    },
+    {
+      "id": "92d3a73b-a069-49d5-9071-52cdb4eeccc8",
+      "sender": "Carla",
+      "text": "Es que lo del efecto llamada es el comodin de siempre del PP y Vox para no afrontar la realidad. La gente ya esta aqui trabajando y esta reforma solo busca que dejen de ser explotados y puedan contribuir de forma legal",
+      "timestamp": 1783948536.2718236,
+      "reply_to": "Adrià",
+      "reply_text": "Vaya cuento te traes, que buenismo el de los progres. Decir que el efecto llamada es un bulo es de no tener ni puta idea de la realidad, es pura fantasía para no ver el desastre",
+      "is_mention": false,
+      "likes": 0
+    },
+    {
+      "id": "ab628633-041e-4d3f-8f6f-a7b4a2e59f4d",
+      "sender": "Ramon",
+      "text": "Entiendo que lo de la explotacion es real, pero meter a tanta gente sin reforzar la vivienda y sanidad es un problema de gestion de Moncloa que va a saturar todo.",
+      "timestamp": 1783948570.8639696,
+      "reply_to": "Sara",
+      "reply_text": "La verdad es que esta reforma es super necesaria para frenar la explotacion laboral. Reducir el arraigo de 3 a 2 años va a ayudar un montón a que no les sigan pagando una miseria por no tener papeles. Y menos cuento con eso del efecto llamada, que es un bulo que siempre usan para no solucionar nada de fondo",
+      "is_mention": false,
+      "likes": 1
+    },
+    {
+      "id": "d628fb23-b90b-4a90-898e-80ef31d6d882",
+      "sender": "Pau",
+      "text": "El concepto de efecto llamada se usa mucho en la oposición para evitar el debate estructural. La realidad es que la mayoría de estas personas ya están aquí integradas en el mercado laboral; lo que se busca es que dejen de estar en la sombra para que coticen y contribuyan de verdad al sistema, no es solo cuestión de fronteras",
+      "timestamp": 1783948600.1667013,
+      "reply_to": "Adrià",
+      "reply_text": "Vaya cuento te traes, que buenismo el de los progres. Decir que el efecto llamada es un bulo es de no tener ni puta idea de la realidad, es pura fantasía para no ver el desastre",
+      "is_mention": false,
+      "likes": 0
+    },
+    {
+      "id": "82eac3e7-2c6c-485a-a513-88e0bd8d3048",
+      "sender": "Berta",
+      "text": "Vaya buenismo, un cheque en blanco porque no hay ni un plan real que nos salve.",
+      "timestamp": 1783948643.3605077,
+      "reply_to": "Carla",
+      "reply_text": "Es que lo del efecto llamada es el comodin de siempre del PP y Vox para no afrontar la realidad. La gente ya esta aqui trabajando y esta reforma solo busca que dejen de ser explotados y puedan contribuir de forma legal",
+      "is_mention": false,
+      "likes": 0
+    },
+    {
+      "id": "25580424-2975-4c17-9357-08bb65c89fb1",
+      "sender": "Irene",
+      "text": "Vaya bulla con el efecto llamada, no tienes ni idea de nada.",
+      "timestamp": 1783948668.2422166,
+      "reply_to": "Adrià",
+      "reply_text": "Vaya cuento te traes, que buenismo el de los progres. Decir que el efecto llamada es un bulo es de no tener ni puta idea de la realidad, es pura fantasía para no ver el desastre",
+      "is_mention": false,
+      "likes": 1
+    }
+  ]
 }
